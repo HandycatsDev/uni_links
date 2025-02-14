@@ -81,7 +81,8 @@ public class UniLinksPlugin
     }
 
     /** Plugin registration. */
-    public static void registerWith(@NonNull PluginRegistry.Registrar registrar) {
+    @Deprecated
+    public static void registerWith(@NonNull io.flutter.plugin.common.PluginRegistry.Registrar registrar) {
         // Detect if we've been launched in background
         if (registrar.activity() == null) {
             return;
